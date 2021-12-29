@@ -1,0 +1,7 @@
+/Users/evil/Project/Encrypted transmission of information/build/CMakeFiles/rebuild_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/CMakeFiles/edit_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/ETISrc/CMakeFiles/rebuild_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/ETISrc/CMakeFiles/edit_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/ETISrc/EncryptionAlgorithm/CMakeFiles/rebuild_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/ETISrc/EncryptionAlgorithm/CMakeFiles/edit_cache.dir
+/Users/evil/Project/Encrypted transmission of information/build/ETISrc/EncryptionAlgorithm/CMakeFiles/OpenETI.dir

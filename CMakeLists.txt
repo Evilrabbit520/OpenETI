@@ -1,18 +1,10 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(CPPDylibTest)
+project(OpenETI)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(include)
+message(STATUS "root This is BINARY dir " ${PROJECT_BINARY_DIR})
+message(STATUS "root This is SOURCE dir " ${PROJECT_SOURCE_DIR})
 
-aux_source_directory(. ROOT)
-aux_source_directory(src SRCDIR)
-
-set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
-
-#add_executable(CPPLearn source/main.cpp)
-
-#message("tests----------------------")
-
-add_library(CppDylibTest SHARED ${ROOT} ${SRCDIR})
+add_subdirectory(ETISrc)
