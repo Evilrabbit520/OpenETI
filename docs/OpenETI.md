@@ -11,6 +11,24 @@ With the rapid development and improvement of modern communication technology, p
 
 **QQ技术交流群：864265068(超多大佬)**
 
+## Build
+
+1. Manually build
+
+`cd` enter the `build` directory and use `cmake -DCMAKE_CXX_FLAGS=-std=c++20 -Wall -Werror ..` to build(Because `if constexpr()` is used in the code, be sure to use C++17 and above standards to build the code.).
+
+2. Build with script files
+
+Run `sh Build.sh` (currently only macOS is supported, other platforms are welcome to improve).
+
+1. 手动构建
+
+`cd` 进入 `build` 目录使用 `cmake -DCMAKE_CXX_FLAGS=-std=c++20 -Wall -Werror ..` 构建（因为代码中使用了`if constexpr()`请务必使用C++17及以上标准构建代码。）.
+
+2. 利用脚本文件构建
+
+运行`sh Build.sh`（目前只支持macOS，其他平台欢迎完善）。
+
 ## License
 
 BSD 3 Clause
