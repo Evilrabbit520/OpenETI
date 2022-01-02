@@ -17,10 +17,26 @@
 
 using namespace std;
 
+template<typename T, typename... Ts>
+void newPrint(T arg1, Ts... arg_left)
+{
+    std::cout<<arg1<<", ";
+    if constexpr(sizeof...(arg_left) > 0)
+    {
+        newPrint(arg_left...);
+    }
+}
 
 int main()
 {
-    hello();
+    //hello();
+    //newPrint(1, 22, "www");
+
+    string zf;
+    cin >> zf;
+    cout << "md5 of " << zf << ": " << md5(zf, "lower") << endl;
+    cout << endl;
+    cout << "md5 of " << zf << ": " << md5(zf, "upper") << endl;
 
 	return 0;
 }
