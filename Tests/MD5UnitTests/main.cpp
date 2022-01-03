@@ -12,7 +12,6 @@
 #include <cstring>
 #include <thread>
 
-#include "include/main.h"
 #include "include/md5.h"
 
 using namespace std;
@@ -32,11 +31,13 @@ int main()
     //hello();
     //newPrint(1, 22, "www");
 
+    
+
     string zf;
     cin >> zf;
-    cout << "md5 of " << zf << ": " << md5(zf, "lower") << endl;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
     cout << endl;
-    cout << "md5 of " << zf << ": " << md5(zf, "upper") << endl;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
 
 	return 0;
 }
