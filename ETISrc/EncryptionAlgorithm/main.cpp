@@ -20,9 +20,9 @@ void hello()
 {
     string zf;
     cin >> zf;
-    cout << "md5 of " << zf << ": " << md5(zf, "lower") << endl;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
     cout << endl;
-    cout << "md5 of " << zf << ": " << md5(zf, "upper") << endl;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
 };
 
 int sum(int a,int b)

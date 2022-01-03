@@ -19,6 +19,9 @@
 extern "C"{
 #endif
 
+namespace Hash
+{
+
 class MD5
 {
 public:
@@ -64,6 +67,8 @@ std::string UntreatedMd5(const std::string str);
 
 //md5的字符串，upper大写，lower小写
 std::string md5(const std::string str, const std::string style);
+
+} // namespace Hash
 
 #ifdef __cplusplus
 } //extern "C"

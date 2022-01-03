@@ -12,6 +12,10 @@
 #include "md5.h"
 /* system implementation headers */
 #include <stdio.h>
+
+namespace Hash
+{
+
 // Constants for MD5 Transform routine.
 #define S11 7
 #define S12 12
@@ -362,3 +366,5 @@ std::string md5(const std::string str, const std::string style)
 	
 	return res;
 }
+	
+} // namespace Hash
