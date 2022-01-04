@@ -4,8 +4,13 @@
  * @brief md5 header file definition.
  * @version 1.0.1
  * @date 2021-12-29
+ * @update log
+ * 		1) 20211228-20211231 V1.0.0
+ * 			1. 初代版本
+ *   	2) 20211231-20221203 V1.0.1
+ * 			1. 新增命名空间
  * 
- * @copyright Copyright (c) 2021 Evilrabbit. All rights reserved.
+ * @copyright Copyright (c) 2021-2022 Evilrabbit. All rights reserved.
  * 
  */
 
@@ -18,6 +23,13 @@
 #ifdef __cplusplus
 extern "C"{
 #endif
+
+/**
+ * @brief Hash散列包含空间
+ * 
+ */
+namespace Hash
+{
 
 class MD5
 {
@@ -64,6 +76,8 @@ std::string UntreatedMd5(const std::string str);
 
 //md5的字符串，upper大写，lower小写
 std::string md5(const std::string str, const std::string style);
+
+} // namespace Hash
 
 #ifdef __cplusplus
 } //extern "C"

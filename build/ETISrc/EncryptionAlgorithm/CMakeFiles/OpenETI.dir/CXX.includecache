@@ -6,19 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/main.cpp
-iostream
--
-main.h
-/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/main.h
+/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/md5.cpp
 md5.h
 /Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/md5.h
-
-/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/main.h
+stdio.h
+-
 
 /Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/md5.h
 cstring
 -
 iostream
+-
+
+/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/sha256.cpp
+iomanip
+-
+sstream
+-
+string
+-
+vector
+-
+sha256.hpp
+/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/sha256.hpp
+
+/Users/evil/Project/Encrypted transmission of information/ETISrc/EncryptionAlgorithm/sha256.hpp
+stdint.h
+-
+string
+-
+vector
 -
 

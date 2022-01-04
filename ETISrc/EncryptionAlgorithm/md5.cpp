@@ -4,14 +4,27 @@
  * @brief md5 source file implementation.
  * @version 1.0.1
  * @date 2021-12-29
+ * @update log
+ * 		1) 20211228-20211231 V1.0.0
+ * 			1. 初代版本
+ *   	2) 20211231-20221203 V1.0.1
+ * 			1. 新增命名空间
  * 
- * @copyright Copyright (c) 2021 Evilrabbit. All rights reserved.
+ * @copyright Copyright (c) 2021-2022 Evilrabbit. All rights reserved.
  * 
  */
 
 #include "md5.h"
 /* system implementation headers */
 #include <stdio.h>
+
+/**
+ * @brief Hash散列包含空间
+ * 
+ */
+namespace Hash
+{
+
 // Constants for MD5 Transform routine.
 #define S11 7
 #define S12 12
@@ -362,3 +375,5 @@ std::string md5(const std::string str, const std::string style)
 	
 	return res;
 }
+	
+} // namespace Hash
