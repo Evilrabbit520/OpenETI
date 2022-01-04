@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../lib/libOpenETI.dylib"
   "../../lib/libOpenETI.pdb"
-  "CMakeFiles/OpenETI.dir/main.cpp.o"
   "CMakeFiles/OpenETI.dir/md5.cpp.o"
+  "CMakeFiles/OpenETI.dir/sha256.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
