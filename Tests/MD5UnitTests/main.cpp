@@ -15,7 +15,10 @@
 
 #include "include/md5.h"
 #include "include/sha256.hpp"
+<<<<<<< HEAD
 #include "include/GetUnixTimestamp.h"
+=======
+>>>>>>> main
 
 using namespace std;
 
@@ -35,6 +38,7 @@ int main()
     //newPrint(1, 22, "www");
 
     
+<<<<<<< HEAD
     // string zf;
     // Hash::SHA256 sha256;
     // cin >> zf;
@@ -46,6 +50,18 @@ int main()
 
     ProcessingTimestamp pt;
     cout << pt.GetUnixTimestamp() << endl;
+=======
+
+    string zf;
+    Hash::Sha256 sha256;
+    cin >> zf;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
+    cout << endl;
+    cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
+    cout << endl;
+    cout << "sha256 of " << zf << ": " << sha256.getHexMessageDigest(zf) << endl;
+
+>>>>>>> main
 
 	return 0;
 }
