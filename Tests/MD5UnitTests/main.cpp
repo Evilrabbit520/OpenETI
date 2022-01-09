@@ -11,21 +11,23 @@
 #include <iostream>
 #include <cstring>
 #include <thread>
+#include <time.h>
 
 #include "include/md5.h"
 #include "include/sha256.hpp"
+#include "include/GetUnixTimestamp.h"
 
 using namespace std;
 
-template<typename T, typename... Ts>
-void newPrint(T arg1, Ts... arg_left)
-{
-    std::cout<<arg1<<", ";
-    if constexpr(sizeof...(arg_left) > 0)
-    {
-        newPrint(arg_left...);
-    }
-}
+// template<typename T, typename... Ts>
+// void newPrint(T arg1, Ts... arg_left)
+// {
+//     std::cout<<arg1<<", ";
+//     if constexpr(sizeof...(arg_left) > 0)
+//     {
+//         newPrint(arg_left...);
+//     }
+// }
 
 int main()
 {
@@ -33,16 +35,17 @@ int main()
     //newPrint(1, 22, "www");
 
     
+    // string zf;
+    // Hash::SHA256 sha256;
+    // cin >> zf;
+    // cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
+    // cout << endl;
+    // cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
+    // cout << endl;
+    // cout << "sha256 of " << zf << ": " << sha256.getHexMessageDigest(zf) << endl;
 
-    string zf;
-    Hash::Sha256 sha256;
-    cin >> zf;
-    cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
-    cout << endl;
-    cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
-    cout << endl;
-    cout << "sha256 of " << zf << ": " << sha256.getHexMessageDigest(zf) << endl;
-
+    ProcessingTimestamp pt;
+    cout << pt.GetUnixTimestamp() << endl;
 
 	return 0;
 }
