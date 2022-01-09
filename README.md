@@ -2,7 +2,7 @@
 
 # OpenETI
 
-[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](hhttps://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)][BSD]
 
 
 With the rapid development and improvement of modern communication technology, people's needs for network transmission security are self-evident, and various ways of network stealing have become prominent security issues for users and enterprises (institutions). String encryption and transmission have also become the basic unit of network transmission security, playing a vital role. String encryption and transmission security have become an important prerequisite for determining network transmission security.
@@ -13,4 +13,7 @@ With the rapid development and improvement of modern communication technology, p
 
 ## License
 
-BSD 3 Clause
+[BSD 3 Clause][BSD]
+
+
+[BSD]:hhttps://opensource.org/licenses/BSD-3-Clause
