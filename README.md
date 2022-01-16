@@ -11,6 +11,34 @@ With the rapid development and improvement of modern communication technology, p
 
 **QQ技术交流群：864265068(超多大佬)**
 
+## Build
+
+The original build of the macOS uses the vscode of the M1 chip, we recommend that it is best to compile with vscode.
+
+``` sh
+#MacOS ARM or Intel
+
+cd <OpenETI-root-dir>
+cd build
+
+cmake -DCMAKE_OSX_ARCHITECTURES="[x86_64][arm64]" ..
+
+make -j4
+
+```
+
+## The current construction status of each platform.
+
+| System | CPU (32bit) | CPU (64bit) |
+| :---: | :---: | :---: |
+| Linux (GCC) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| Linux (Clang) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| Windows (VS2017) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| Windows (VS2019) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| macOS | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| macOS(ARM) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
+| Android | - | - |
+
 ## License
 
 [BSD 3 Clause](https://opensource.org/licenses/BSD-3-Clause)
