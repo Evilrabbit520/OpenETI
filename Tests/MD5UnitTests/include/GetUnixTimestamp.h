@@ -5,7 +5,7 @@
  * @version 1.0.0
  * @date 2021-12-29
  * @update log
- * 		1) 20220109-20220109 V1.0.0
+ * 		1) 20220109-20220110 V1.0.0
  * 			1. 初代版本
  * 
  * @copyright Copyright (c) 2021-2022 Evilrabbit. All rights reserved.
@@ -35,7 +35,11 @@ public:
      */
     std::string GetUnixTimestamp();
 
-    std::string StampTime(long long timestamp);
+    /**
+     * @brief Timestamp to convert date.
+     * @param[in] timestamp 
+     */
+    void StampTime(long long timestamp);
 
     //析构函数
     ~ProcessingTimestamp();

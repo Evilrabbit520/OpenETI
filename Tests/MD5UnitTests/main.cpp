@@ -14,37 +14,44 @@
 #include <time.h>
 
 #include "include/md5.h"
+#include "include/json.hpp"
 #include "include/sha256.hpp"
 #include "include/GetUnixTimestamp.h"
 
-
 using namespace std;
-
-// template<typename T, typename... Ts>
-// void newPrint(T arg1, Ts... arg_left)
-// {
-//     std::cout<<arg1<<", ";
-//     if constexpr(sizeof...(arg_left) > 0)
-//     {
-//         newPrint(arg_left...);
-//     }
-// }
+using json = nlohmann::json;
 
 int main()
 {
-    //hello();
-    //newPrint(1, 22, "www");
+    // time_t times = time(0);
+    // char Arrs[255];
+    // strftime(Arrs, sizeof(Arrs), "%Y-%m-%d-%H-%M-%S",localtime(&times));
+    // time_t result = std::time(nullptr);
+    // cout << std::asctime(std::localtime(&result));
+    // stringstream strtime;
+    // time_t timep;
+    // time (&timep);
+    // char tmp[64];
+    // strftime(tmp, sizeof(tmp), "%Y-%m-%d %H:%M:%S",localtime(&timep) );
+    // cout << tmp << endl;
 
-    // string zf;
-    // Hash::SHA256 sha256;
-    // cin >> zf;
-    // cout << "md5 of " << zf << ": " << Hash::md5(zf, "lower") << endl;
-    // cout << endl;
-    // cout << "md5 of " << zf << ": " << Hash::md5(zf, "upper") << endl;
-    // cout << endl;
-    // cout << "sha256 of " << zf << ": " << sha256.getHexMessageDigest(zf) << endl;
+    // time_t timep;
+    // time (&timep);
+    // char tArr[255];
+    // strftime(tArr, sizeof(tArr), "%Y-%m-%d %H:%M:%S", localtime(&timep));
+    // cout << tArr << endl;
+    
+    // create JSON values
+    json object = {{"one", 1}, {"two", 2}};
+    object["psw"] = "ccc";
 
-    ProcessingTimestamp pt;
-    cout << pt.GetUnixTimestamp() << endl;
+    // print values
+    std::cout << object << '\n';
+
+    time_t ti;
+    time(&ti);
+    char aArr[255];
+    strftime(aArr, sizeof(aArr), "%Y-%m-%d %H:%M:%S", localtime(&ti));
+
 	return 0;
 }

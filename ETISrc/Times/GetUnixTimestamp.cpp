@@ -5,7 +5,7 @@
  * @version 1.0.0
  * @date 2021-12-29
  * @update log
- * 		1) 20220109-20220109 V1.0.0
+ * 		1) 20220109-20220110 V1.0.0
  * 			1. 初代版本
  * 
  * @copyright Copyright (c) 2021-2022 Evilrabbit. All rights reserved.
@@ -24,7 +24,7 @@ ProcessingTimestamp::~ProcessingTimestamp()
 
 }
 
-std::string  ProcessingTimestamp::GetUnixTimestamp()
+std::string ProcessingTimestamp::GetUnixTimestamp()
 {
     /* Return the current time and put it in *TIMER if TIMER is not NULL.  */
     //来自time.h。这里用函数返回值的方式获取Timestamp。
