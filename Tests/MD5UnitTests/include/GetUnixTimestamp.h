@@ -35,6 +35,10 @@ public:
      */
     std::string GetUnixTimestamp();
 
+    /**
+     * @brief Timestamp to convert date.
+     * @param[in] timestamp 
+     */
     void StampTime(long long timestamp);
 
     //析构函数

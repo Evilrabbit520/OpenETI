@@ -19,4 +19,4 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR})
 #add_executable(CPPLearn source/main.cpp)
 
 add_executable(OpenETIUnitTests ${ROOT} ${SRCDIR})
-TARGET_LINK_LIBRARIES(OpenETIUnitTests libOpenETI.dylib)
+TARGET_LINK_LIBRARIES(OpenETIUnitTests libOpenETI.so)
