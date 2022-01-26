@@ -20,16 +20,6 @@
 
 using namespace std;
 using json = nlohmann::json;
-// template<typename T, typename... Ts>
-// void newPrint(T arg1, Ts... arg_left)
-// {
-//     std::cout<<arg1<<", ";
-//     if constexpr(sizeof...(arg_left) > 0)
-//     {
-//         newPrint(arg_left...);
-//     }
-// }
-
 
 int main()
 {
@@ -63,8 +53,5 @@ int main()
     char aArr[255];
     strftime(aArr, sizeof(aArr), "%Y-%m-%d %H:%M:%S", localtime(&ti));
 
-
-
-    //StampTime(1641798930);
 	return 0;
 }

@@ -33,36 +33,15 @@ std::string ProcessingTimestamp::GetUnixTimestamp()
 	return std::to_string(time);
 }
 
-void ProcessingTimestamp::StampTime(long long UnixTimestamp)
+std::string StampTime(long long timestamp)
 {
-    struct tm *time;
-    uint16_t year, yday;
-    uint8_t month, day, week, hour, minute, second;
-    time_t timestamp = UnixTimestamp;
-
-    //调用系统函数
-    time = localtime(&timestamp);
-
-    year = time->tm_year;
-    month = time->tm_mon;
-    week = time->tm_wday;
-    yday = time->tm_mday;
-    day = time->tm_mday;
-    hour = time->tm_hour;
-    minute = time->tm_min;
-    second = time->tm_sec;
-
-    /* 时间校正 */
-    year += 1900;
-    month += 1;
-    
-    std::cout << "UNIX时间戳: " << timestamp << std::endl;
-    printf("日期:%d-%d-%d 第%d天 星期%d 时间:%d:%d:%d\r\n",
-        year, month, day, yday, week, hour, minute, second);
-    
-    const int cMessbt = 50;
-    char *str = new char[cMessbt];
-    strftime(str, cMessbt, "%F %T", time);
-    std::cout << str << std::endl;
-    delete []str;
+    int ms = timestamp % 1000;//取毫秒
+	time_t tick = (time_t)(timestamp/1000);//转换时间
+	struct tm tm;
+	char s[40];
+	tm = *localtime(&tick);
+	strftime(s, sizeof(s), "%Y-%m-%d %H:%M:%S", &tm);
+	std::string str(s);
+	str = str+ " " + std::to_string(ms);
+	return str;
 }
