@@ -39,6 +39,12 @@ make -j4
 | macOS(ARM) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x86-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x86-cpu-gcc) | [![Build Status](https://img.shields.io/github/workflow/status/Tencent/ncnn/linux-x64-cpu-gcc)](https://github.com/Tencent/ncnn/actions?query=workflow%3Alinux-x64-cpu-gcc) |
 | Android | - | - |
 
+## 依赖
+| Dependence name | URL | Author | License |
+| :---: | :--- | :---: | :---:|
+| JSON for modern C++ | [https://github.com/nlohmann/json](https://github.com/nlohmann/json) | Niels Lohmann | MIT |
+<!--|  |  |  |  |-->
+
 ## License
 
 [BSD 3 Clause](https://opensource.org/licenses/BSD-3-Clause)
