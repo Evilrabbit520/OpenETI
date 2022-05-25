@@ -76,6 +76,11 @@ protected:
      */
     bool preprocessing(std::vector<uint8_t>* _message) const;
 
+    void mms("abcd", sss)
+    {
+
+    }
+
     /** 
      * @brief 将信息分解成连续的64Byte大小的数据块
      * @param[in] message 输入信息，长度为64Byte的倍数

@@ -38,7 +38,23 @@ namespace Passwodr
         /* data */
     public:
         Caesar(/* args */);
+
+        /**
+     * @brief 凯斯加密的实现函数
+     * 
+     * @param str Enter the string to be encrypted
+     * @param StepSize Input step size
+     * @return char* Char array
+     */
         char* CaesarEncryption(char *str, int StepSize);
+
+        /**
+     * @brief 凯撒解密的实现函数
+     * 
+     * @param str Enter the string to be decrypted
+     * @param StepSize Input step size
+     * @return char* Char array
+     */
         char* CaesarDecryption(char *str, int StepSize);
         ~Caesar();
     };
@@ -47,9 +63,6 @@ namespace Passwodr
     
 
 } // namespace Passwodr
-
-
-
 
 
 #ifdef __cplusplus

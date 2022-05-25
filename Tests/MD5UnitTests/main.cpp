@@ -42,16 +42,21 @@ int main()
     // cout << tArr << endl;
     
     // create JSON values
-    json object = {{"one", 1}, {"two", 2}};
-    object["psw"] = "ccc";
 
-    // print values
-    std::cout << object << '\n';
+    // json object = {{"one", 1}, {"two", 2}};
+    // object["psw"] = "ccc";
 
-    time_t ti;
-    time(&ti);
-    char aArr[255];
-    strftime(aArr, sizeof(aArr), "%Y-%m-%d %H:%M:%S", localtime(&ti));
+    // // print values
+    // std::cout << object << '\n';
+
+    // time_t ti;
+    // time(&ti);
+    // char aArr[255];
+    // strftime(aArr, sizeof(aArr), "%Y-%m-%d %H:%M:%S", localtime(&ti));
+
+    cout << Hash::md5("zzz", "lower") << endl;
+
+
 
 	return 0;
 }

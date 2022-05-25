@@ -22,13 +22,7 @@ namespace Passwodr
     //Caesar加密公式： f(a)=(a+N) mod 26
     //Caesar解密公式： f(a)=(a+(26-N)) mod 26
 
-    /**
-     * @brief 凯斯加密的实现函数
-     * 
-     * @param str Enter the string to be encrypted
-     * @param StepSize Input step size
-     * @return char* Char array
-     */
+    
     char* Caesar::CaesarEncryption(char *str, int StepSize)
     {
         for(int i = 0; i < strlen(str); i++)
@@ -45,13 +39,7 @@ namespace Passwodr
         return str;
     }
 
-    /**
-     * @brief 凯撒解密的实现函数
-     * 
-     * @param str Enter the string to be decrypted
-     * @param StepSize Input step size
-     * @return char* Char array
-     */
+    
     char* Caesar::CaesarDecryption(char *str, int StepSize)
     {
         for(int i = 0; i < strlen(str); i++)
