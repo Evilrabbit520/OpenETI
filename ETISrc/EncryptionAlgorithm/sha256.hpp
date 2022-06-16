@@ -76,10 +76,10 @@ protected:
      */
     bool preprocessing(std::vector<uint8_t>* _message) const;
 
-    void mms("abcd", sss)
-    {
+    // void mms("abcd", sss)
+    // {
 
-    }
+    // }
 
     /** 
      * @brief 将信息分解成连续的64Byte大小的数据块
