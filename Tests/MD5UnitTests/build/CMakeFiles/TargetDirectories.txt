@@ -1,0 +1,3 @@
+/Users/evil/Project/Encrypted transmission of information/Tests/MD5UnitTests/build/CMakeFiles/rebuild_cache.dir
+/Users/evil/Project/Encrypted transmission of information/Tests/MD5UnitTests/build/CMakeFiles/edit_cache.dir
+/Users/evil/Project/Encrypted transmission of information/Tests/MD5UnitTests/build/CMakeFiles/OpenETIUnitTests.dir

@@ -18,6 +18,7 @@
 #include <cstring>
 #include <vector>
 #include <iostream>
+#include <cmath>
 
 #ifdef __cplusplus
 extern "C"{

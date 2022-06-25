@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // C language configurations
+        {
+            "name": "Build C",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C: clang build current single file"
+        },
+
+        // C++ language configurations
+        {
+            "name": "Build C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "preLaunchTask": "C++: clang++ build current single file"
+        },
+
+        // Solve can't input problem with "CodeLLDB" extension.
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Build and debug C(LLDB)",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "C: clang build current single file"
+        },
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Build and debug C++(LLDB)",
+            "program": "${workspaceFolder}/build/CppDylibTest",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "C++: clang++ build project multiple files"
+        },
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Build and debug C++(CMake)",
+            "program": "${workspaceFolder}/build/lib/libOpenETI",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+            
+    ]
+}
