@@ -127,10 +127,17 @@ long RSA::ProducePublicKey(long orla)
         long residual;
         while (residual = public_key % orla)
         {
+<<<<<<< HEAD
             public_key = orla;
 		    orla = residual;
         }
         return orla;
+=======
+            if(public_key
+        }
+        
+
+>>>>>>> b4f50665e725c7f14e4a95a22dd9d8361cf84075
     }
 
 //求private_key
@@ -144,6 +151,7 @@ long ProducePrivateKey(long public_key, long orla)
     }
     ++private_key;
     return private_key;
+<<<<<<< HEAD
 
 }
 
@@ -163,6 +171,8 @@ long RSA::Ecrept(long msg, long key, long share_key){
 	}
 	return msg_out;
 }
+=======
+>>>>>>> b4f50665e725c7f14e4a95a22dd9d8361cf84075
 
 //打印加密之后的信息
 void RSA::PrintInfo(std::vector<long>& ecrept_str) {
@@ -171,6 +181,13 @@ void RSA::PrintInfo(std::vector<long>& ecrept_str) {
 	}
 	std::cout << std::endl;
 }
+
+// //加密单个信息
+// long RSA::Ecrept(long msg, long key, long share_key)
+// {
+
+// }
+
 
 RSA::~RSA()
 {}
