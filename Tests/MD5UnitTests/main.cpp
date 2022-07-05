@@ -17,9 +17,26 @@
 #include "include/json.hpp"
 #include "include/sha256.hpp"
 #include "include/GetUnixTimestamp.h"
+#include "include/RSA.h"
 
 using namespace std;
 using json = nlohmann::json;
+
+
+
+void TestString() {
+	RSA rsa;
+	Key key = rsa.GetKey();
+	std::string strin;
+	std::cout << "输入加密信息" << std::endl;
+	std::cin >> strin;
+	std::vector<long> strecrept = rsa.Ecrept(strin, key.public_key, key.share_key);
+	std::string strout = rsa.DEcrept(strecrept, key.private_key, key.share_key);
+	std::cout << "加密信息" << std::endl;
+	rsa.PrintInfo(strecrept);
+	std::cout << "解密信息" << std::endl;
+	std::cout << strout << std::endl;
+}
 
 int main()
 {
@@ -54,8 +71,8 @@ int main()
     // char aArr[255];
     // strftime(aArr, sizeof(aArr), "%Y-%m-%d %H:%M:%S", localtime(&ti));
 
-    cout << Hash::md5("zzz", "lower") << endl;
-
+    //cout << Hash::md5("zzz", "lower") << endl;
+    TestString();
 
 
 	return 0;

@@ -122,7 +122,7 @@ long RSA::ProducePublicKey(long orla)
 }
 
 //判断两个数之间最大公约是否为1
-    long ProduceGcd(long public_key, long orla)
+    long RSA::ProduceGcd(long public_key, long orla)
     {
         long residual;
         while (residual = public_key % orla)
@@ -134,7 +134,7 @@ long RSA::ProducePublicKey(long orla)
     }
 
 //求private_key
-long ProducePrivateKey(long public_key, long orla)
+long RSA::ProducePrivateKey(long public_key, long orla)
 {
     long private_key = orla / public_key;
     while (1)
@@ -165,12 +165,12 @@ long RSA::Ecrept(long msg, long key, long share_key){
 }
 
 //打印加密之后的信息
-void RSA::PrintInfo(std::vector<long>& ecrept_str) {
-	for (const auto& e : ecrept_str){
-		std::cout << e << " ";
-	}
-	std::cout << std::endl;
-}
+// void RSA::PrintInfo(std::vector<long>& ecrept_str) {
+// 	for (const auto& e : ecrept_str){
+// 		std::cout << e << " ";
+// 	}
+// 	std::cout << std::endl;
+// }
 
 // //加密单个信息
 // long RSA::Ecrept(long msg, long key, long share_key)
